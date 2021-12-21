@@ -4,6 +4,10 @@ import { Avatar } from "./Avatar";
 export default {
   title: "Design System/Avatar",
   component: Avatar,
+  /*
+  * More on Storybook argTypes at:
+  * https://storybook.js.org/docs/react/api/argtypes
+  */
   argTypes: {
     size: {
       control: {
@@ -11,6 +15,9 @@ export default {
       },
       options: ['tiny', 'small', 'medium', 'large'],
     },
+  },
+  parameters: {
+    componentSubtitle: "Displays an image that represents a user or organization."
   }
 };
 
@@ -29,9 +36,23 @@ export const Sizes = (args) => (
     <Avatar {...args} size="tiny" />
   </div>
 );
+/*
+ * More on component Storybook args at
+ * https://storybook.js.org/docs/react/writing-stories/args#story-args
+ */
 Sizes.args = {
   username: "Tom Coleman",
   src: "https://avatars2.githubusercontent.com/u/132554",
+};
+/*
+ * More on component Storybook parameters at:
+ * https://storybook.js.org/docs/react/writing-stories/parameters#story-parameters
+ */
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "Four sizes are supported.",
+  },
 };
 
 export const Initials = (args) => (
@@ -42,6 +63,11 @@ export const Initials = (args) => (
     <Avatar username="Michael Shilman" />
   </div>
 );
+Initials.parameters = {
+  docs: {
+    storyDescription: "Shows the initials of the names.",
+  }
+};
 
 export const Loading = (args) => (
     <div>
@@ -50,10 +76,15 @@ export const Loading = (args) => (
       <Avatar {...args} size="small" />
       <Avatar {...args} size="tiny" />
     </div>
-  );
-  Loading.args = {
-    loading: true,
-  };
+);
+Loading.args = {
+  loading: true,
+};
+Loading.parameters = {
+  docs: {
+    storyDescription: "Shows the loading state in various sizes.",
+  }
+};
 
 export const Large = (args) => (
   <div>
@@ -66,6 +97,11 @@ export const Large = (args) => (
     />
   </div>
 );
+Large.parameters = {
+  docs: {
+    storyDescription: "Shows a large Avatar with different items.",
+  }
+};
 
 export const Controls = Standard.bind({});
 Controls.args = {
@@ -73,4 +109,9 @@ Controls.args = {
   size: 'tiny',
   username: 'Dominic Nguyen',
   src: 'https://avatars2.githubusercontent.com/u/263385'
-}
+};
+Controls.parameters = {
+  docs: {
+    storyDescription: "Avatar component using Controls.",
+  }
+};

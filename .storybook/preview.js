@@ -15,15 +15,15 @@ export const parameters = {
   actions: {
     argTypesRegex: "^on[A-Z].*"
   },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
   // Storybook a11y addon configuration
   a11y: {
     element: "#root",  // the target DOM element
     manual: false      // sets the execution mode for the addon
-  }
-  // controls: {
-  //   matchers: {
-  //     color: /(background|color)$/i,
-  //     date: /Date$/,
-  //   },
-  // },
+  },
 }
