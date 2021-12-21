@@ -106,7 +106,7 @@ Large.parameters = {
 export const Controls = Standard.bind({});
 Controls.args = {
   loading: false,
-  size: 'tiny',
+  size: 'medium',
   username: 'Dominic Nguyen',
   src: 'https://avatars2.githubusercontent.com/u/263385'
 };
