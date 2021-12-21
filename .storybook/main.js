@@ -11,5 +11,5 @@ module.exports = {
     "@storybook/addon-a11y"
   ],
   "framework": "@storybook/react",
-  "staticDirs": ["../public"],
+  //"staticDirs": ["../public"],
 }
