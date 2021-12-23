@@ -1,7 +1,6 @@
-# v0.1.1 (Thu Dec 23 2021)
+# v0.1.2 (Thu Dec 23 2021)
 
-- Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
-
-#### Authors: 01
+#### Authors: 2
 
 - [@svettorelo](https://github.com/svettorelo)
+- svettorelo (sabrinavettorelo@gmail.com)
