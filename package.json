@@ -1,6 +1,6 @@
 {
   "name": "@svettorelo/learnstorybook-design-system",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "private": false,
   "description": "Storybook design systems tutorial",
   "main": "dist/index.js",
