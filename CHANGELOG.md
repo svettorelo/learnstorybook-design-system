@@ -1,3 +1,15 @@
+# v0.2.0 (Fri Dec 24 2021)
+
+#### 🚀 Enhancement
+
+- export added [#3](https://github.com/svettorelo/learnstorybook-design-system/pull/3) ([@svettorelo](https://github.com/svettorelo))
+
+#### Authors: 1
+
+- [@svettorelo](https://github.com/svettorelo)
+
+---
+
 # v0.1.1 (Fri Dec 24 2021)
 
 #### 🐛 Bug Fix
